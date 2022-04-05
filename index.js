@@ -1,17 +1,15 @@
+function nextInLine(arr, item) {
+  // Only change code below this line
+  arr.push(item);
+  
+  return arr.shift();
+  // Only change code above this line
+}
+
 // Setup
-let sum = 0;
+const testArr = [1, 2, 3, 4, 5];
 
-function addThree() {
-  sum = sum + 3;
-}
-
-// Only change code below this line
-
-function addFive() {
-  sum += 5;
-}
-
-// Only change code above this line
-
-addThree();
-addFive();
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
